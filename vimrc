@@ -157,7 +157,7 @@ let g:easytags_resolve_links = 1
 let g:easytags_suppress_ctags_warning = 1
 
 "--- tagbar settings ---
-
+"ctags-exuberant required
 "set ctag path
 let g:tagbar_ctags_bin='/usr/local/bin/ctags'
 "open/close tagbar with \b
