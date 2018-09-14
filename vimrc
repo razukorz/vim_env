@@ -160,7 +160,7 @@ let g:easytags_suppress_ctags_warning = 1
 "--- tagbar settings ---
 
 "set ctag path
-let g:tagbar_ctags_bin='/usr/local/bin/ctags'
+let g:tagbar_ctags_bin='/usr/bin/ctags'
 "open/close tagbar with \b
 nmap <silent> <leader>b :TagbarToggle<CR>
 
@@ -210,4 +210,4 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:ycm_show_diagnostics_ui = 0
 
 "python semantic support
-let g:ycm_python_binary_path = '/Library/Frameworks/Python.framework/Versions/3.6/bin/python3'
+let g:ycm_server_python_interpreter = '/usr/bin/python2'
