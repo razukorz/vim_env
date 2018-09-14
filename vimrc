@@ -145,6 +145,7 @@ let g:syntastic_check_on_wq = 0
 
 "--- easytags settings ---
 
+"ctags-exuberant required
 "where to look for tags files
 set tags=./tags
 set tags=~/.vimtags
@@ -157,7 +158,7 @@ let g:easytags_resolve_links = 1
 let g:easytags_suppress_ctags_warning = 1
 
 "--- tagbar settings ---
-"ctags-exuberant required
+
 "set ctag path
 let g:tagbar_ctags_bin='/usr/local/bin/ctags'
 "open/close tagbar with \b
@@ -177,6 +178,7 @@ let g:airline#extensions#hunks#non_zero_only = 1
 "see help for more command and features
 
 "--- git-fugitive ---
+
 "see its github page for more command
 ":Gwrite == add
 ":Gread == checkout
