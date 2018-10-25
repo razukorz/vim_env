@@ -43,12 +43,18 @@ Plugin 'sheerun/vim-polyglot'
 "this add strip to trailing whitespace
 Plugin 'ntpeters/vim-better-whitespace'
 
+" vertical indentlines
+Plugin 'Yggdroot/indentLine'
+
 "--- other text editting ---
 
 "easily surround chunks of text
 Plugin 'tpope/vim-surround'
 "align CSV files at commas, align Markdown tables, and more
 Plugin 'godlygeek/tabular'
+
+"--- YouCompleteMe ---
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 
@@ -147,3 +153,7 @@ augroup END
 "--- tmux-navigator ---
 
 "Ctrl + h,j,k,l,\  to different splits
+
+" --- IndentLine: show vertical indent lines ---
+let g:indentLine_conceallevel=1
+let g:indentLine_color_term=220
