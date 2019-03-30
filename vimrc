@@ -43,9 +43,6 @@ Plugin 'tpope/vim-fugitive'
 "--- automatic closing for quote, bracket, etc. ---
 Plugin 'Raimondi/delimitMate'
 
-"automaticall insert the closing HTML tag
-Plugin 'HTML-AutoCloseTag'
-
 "--- tmux-like navigator ---
 Plugin 'christoomey/vim-tmux-navigator'
 
@@ -57,13 +54,6 @@ Plugin 'ntpeters/vim-better-whitespace'
 
 " vertical indentlines
 Plugin 'Yggdroot/indentLine'
-
-"--- other text editting ---
-
-"easily surround chunks of text
-Plugin 'tpope/vim-surround'
-"align CSV files at commas, align Markdown tables, and more
-Plugin 'godlygeek/tabular'
 
 "--- autocompletion ---
 Plugin 'Valloric/YouCompleteMe'
@@ -83,9 +73,9 @@ set showcmd
 set incsearch
 set hlsearch
 set cursorline
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=8
+set softtabstop=8
+set shiftwidth=8
 set expandtab
 set noswapfile
 set autoindent
@@ -93,8 +83,6 @@ set showmatch
 set comments=sl:/*,mb:\ *,elx:\ */
 set smartindent
 set textwidth=120
-"set conceal level to 1
-"set conceallevel=1
 
 syntax on
 
@@ -177,7 +165,7 @@ nmap <silent> <leader>b :TagbarToggle<CR>
 
 "required after having changed the colorscheme
 "hi clear SignColumn
-"in vim-airline, only display "hunks" if the diff is non-zero or not
+"in vim-airline, only display hunks if the diff is non-zero or not
 let g:airline#extensions#hunks#non_zero_only = 1
 "see help for more command and features
 
@@ -214,7 +202,7 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 
 "disable YCM completer;
 "somehow YCM C completer conflicts with Synastic;
-let g:ycm_show_diagnostics_ui = 0
+"let g:ycm_show_diagnostics_ui = 0
 
 "python semantic support
-let g:ycm_python_binary_path = '/Library/Frameworks/Python.framework/Versions/3.6/bin/python3'
+"let g:ycm_python_binary_path = '/Library/Frameworks/Python.framework/Versions/3.6/bin/python3'
