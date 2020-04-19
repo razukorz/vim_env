@@ -3,7 +3,6 @@
 
 "disable vi
 set nocompatible
-
 filetype off
 
 "Vundle path
