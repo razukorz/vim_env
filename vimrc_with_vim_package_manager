@@ -8,28 +8,28 @@ filetype off
 
 " List of Plugins
 "--- colorschemes and themes ---
-" 'crusoexia/vim-monokai'
-" 'vim-airline/vim-airline'
-" 'vim-airline/vim-airline-themes'
+"crusoexia/vim-monokai
+"vim-airline/vim-airline
+"vim-airline/vim-airline-themes
 
 "--- treeviews ---
-" 'scrooloose/nerdtree'
-" 'jistr/vim-nerdtree-tabs'
+"scrooloose/nerdtree
+"jistr/vim-nerdtree-tabs
 
 "--- syntax error check ---
-" 'scrooloose/syntastic'
+"scrooloose/syntastic
 
 "--- automatic closing for quote, bracket, etc. ---
-" 'Raimondi/delimitMate'
+"Raimondi/delimitMate
 
 "--- syntax highlighting ---
-" 'sheerun/vim-polyglot'
+"sheerun/vim-polyglot
 
 "this add strip to trailing whitespace
-" 'ntpeters/vim-better-whitespace'
+"ntpeters/vim-better-whitespace
 
 "--- vertical indentlines ---
-" 'Yggdroot/indentLine'
+"Yggdroot/indentLine
 
 filetype plugin indent on
 
@@ -44,9 +44,9 @@ set showcmd
 set incsearch
 set hlsearch
 set cursorline
-set tabstop=8
-set softtabstop=8
-set shiftwidth=8
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set expandtab
 set noswapfile
 set autoindent
@@ -94,8 +94,8 @@ let g:nerdtree_tabs_open_on_console_startup=0
 let g:syntastic_error_symbol="✘"
 let g:syntastic_warning_symbol="▲"
 augroup mySyntastic
-	au!
-	au FileType tex let b:syntastic_mode = "passive"
+        au!
+        au FileType tex let b:syntastic_mode = "passive"
 augroup END
 
 "some recommended setting on syntastic github page
@@ -111,11 +111,11 @@ let g:syntastic_check_on_wq = 0
 
 let delimitMate_expand_cr = 1
 augroup mydelimitMate
-	au!
-	au FileType markdown let b:delimitMate_nesting_quotes = ["`"]
-	au FileType tex let b:delimitMate_quotes = ""
-	au FileType tex let b:delimitMate_matchpairs = "(:),[:],{:},`:'"
-	au FileType python let b:delimitMate_nesting_quotes = ['"', "'"]
+        au!
+        au FileType markdown let b:delimitMate_nesting_quotes = ["`"]
+        au FileType tex let b:delimitMate_quotes = ""
+        au FileType tex let b:delimitMate_matchpairs = "(:),[:],{:},`:'"
+        au FileType python let b:delimitMate_nesting_quotes = ['"', "'"]
 augroup END
 
 " --- IndentLine: show vertical indent lines ---
