@@ -1,7 +1,6 @@
 "created by razukorz for personal use based on various online guides
 "razukorz: humanoid from Equestria :)
 
-"disable vi
 set nocompatible
 
 filetype off
